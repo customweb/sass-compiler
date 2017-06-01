@@ -1,0 +1,19 @@
+# TODO should not need this, because should be build/swagger instead of src/swagger, by default!
+src/swagger
+
+.gradle
+build/
+/bin/
+bin/
+
+gradle-app.setting
+
+!gradle-wrapper.jar
+
+.gradletasknamecache
+
+.settings/
+.project
+.classpath
+/bin/
+/bin-gradle/

@@ -1,0 +1,28 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+	id "ca.coglinc2.javacc" version "3.0.0"
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir compileJavacc.outputDirectory
+        }
+    }
+}
+
+eclipseClasspath.dependsOn("compileJavacc")
+
+repositories { jcenter() }
+
+dependencies {
+	compile 'org.w3c.css:sac:1.3'
+	compile 'com.vaadin.external.flute:flute:1.3.0.gg2'
+	compile 'com.yahoo.platform.yui:yuicompressor:2.4.8'
+
+	testCompile 'junit:junit:4.12'
+	testCompile 'org.jsoup:jsoup:1.6.3'
+	testCompile 'commons-io:commons-io:2.2'
+
+}
