@@ -20,11 +20,13 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Collection;
 
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
 
 import com.customweb.sass.testcases.scss.SassTestRunner.TestFactory;
 
 @RunWith(SassTestRunner.class)
+@Ignore
 public class SassLangTests extends AbstractDirectoryScanningSassTests {
 
     @Override

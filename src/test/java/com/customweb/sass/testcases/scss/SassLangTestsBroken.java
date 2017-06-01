@@ -21,11 +21,13 @@ import java.net.URL;
 import java.util.Collection;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.w3c.css.sac.CSSException;
 
 import com.customweb.sass.testcases.scss.SassTestRunner.TestFactory;
 
+@Ignore
 @RunWith(SassTestRunner.class)
 public class SassLangTestsBroken extends AbstractDirectoryScanningSassTests {
 
